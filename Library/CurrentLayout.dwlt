@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 26660
+  controlID: 9
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 26661
+  controlID: 10
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 26662
+  controlID: 11
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -366,24 +366,24 @@ MonoBehaviour:
     height: 343
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 762}
-    m_SelectedIDs: 
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 3c440000
     m_LastClickedID: 0
-    m_ExpandedIDs: 52f9ffffe6fbffff000000000c1e0000
+    m_ExpandedIDs: 1c75fdff60f8ffffe6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Main Camera
+      m_OriginalName: Main Camera
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 7350
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 4
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -419,14 +419,14 @@ MonoBehaviour:
     height: 343
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 639.8213922895393
+  lastFramingTime: 142.2629974233633
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 39.923103, y: 6.5829105, z: 54.172424}
+    m_Target: {x: 18, y: 1.9200001, z: 48.9}
     speed: 2
-    m_Value: {x: 39.923103, y: 6.5829105, z: 54.172424}
+    m_Value: {x: 18, y: 1.9200001, z: 48.9}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -458,9 +458,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.14336121, y: 0.8255834, z: -0.48921245, w: 0.24193148}
   m_Size:
-    m_Target: 34.413773
+    m_Target: 28.649723
     speed: 2
-    m_Value: 34.413773
+    m_Value: 28.649723
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -534,20 +534,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/PostProcessing
   m_ViewMode: 1
-  m_StartGridSize: 68
+  m_StartGridSize: 93
   m_LastFolders:
-  - Assets/Ground textures pack
-  m_LastFoldersGridSize: 68
+  - Assets/PostProcessing
+  m_LastFoldersGridSize: 93
   m_LastProjectPath: C:\Users\Theo\Documents\serious_game_alcohol
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: dc0b0000
-    m_LastClickedID: 3036
-    m_ExpandedIDs: 00000000dc0b00001e0f00006c0f0000ac0f0000761000003a1100007a140000f61500008c17000082180000c4180000ca190000a01a00001040000000ca9a3b
+    scrollPos: {x: 0, y: 139}
+    m_SelectedIDs: 2e440000
+    m_LastClickedID: 17454
+    m_ExpandedIDs: 00000000dc0b0000ac0f00003a1100007a140000f61500008c17000082180000ca190000a01a0000b44000002e4400006044000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +575,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc0b00001e0f00006c0f0000ac0f0000761000003a1100007a140000f61500008c17000082180000c4180000ca190000a01a00001040000000ca9a3b
+    m_ExpandedIDs: 00000000dc0b00001e0f00006c0f0000ac0f0000761000003a1100007a140000f61500008c17000082180000c4180000ca190000a01a0000b4400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 0025000014250000f824000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -628,7 +628,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 68
+    m_GridSize: 93
   m_DirectoriesAreaWidth: 209
 --- !u!114 &17
 MonoBehaviour:

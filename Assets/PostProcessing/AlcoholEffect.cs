@@ -7,19 +7,29 @@ using UnityEngine.PostProcessing;
 
 public class AlcoholEffect : MonoBehaviour {
 
-    public PostProcessingProfile alcoholProfile;
+    public PostProcessingProfile drunkProfile;
+    public PostProcessingProfile normalProfile;
 
-    PostProcessingProfile prof;
+    private bool isDrunk = false;
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.P)){
-             prof = GetComponent<PostProcessingBehaviour>().profile = alcoholProfile;
-        }
-	}
+        if (Input.GetKeyDown(KeyCode.P))
+            if (isDrunk)
+            {
+                PostProcessingProfile ppp = GetComponent<PostProcessingBehaviour>().profile = normalProfile;
+                isDrunk = false;
+                Debug.Log("is ndrunk");
+            } else
+            {
+                GetComponent<PostProcessingBehaviour>().profile = drunkProfile;
+                isDrunk = true;
+                Debug.Log("is drunk");
+            }
+    }
 }

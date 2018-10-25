@@ -12,17 +12,34 @@ public class AlcoholEffect : MonoBehaviour {
 
     private bool isDrunk = false;
 
+    float level;
+
     // Use this for initialization
     void Start () {
-
+        level = GameObject.Find("AlcoholLevel").GetComponent<AlcoholLevel>().level;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        /* DO NOT DELETE - FINAL FUNCTION WILL BE LIKE THIS
+         if (level < 0.5f)
+          {
+                GetComponent<PostProcessingBehaviour>().profile = normalProfile;
+                isDrunk = false;
+                Debug.Log("is ndrunk");
+          }
+         else
+          {
+            GetComponent<PostProcessingBehaviour>().profile = drunkProfile;
+            isDrunk = true;
+            Debug.Log("is drunk");
+          }*/
+
+        // SWITCH TO TEST EFFECT - WILL BE DELETED
         if (Input.GetKeyDown(KeyCode.P))
             if (isDrunk)
             {
-                PostProcessingProfile ppp = GetComponent<PostProcessingBehaviour>().profile = normalProfile;
+                GetComponent<PostProcessingBehaviour>().profile = normalProfile;
                 isDrunk = false;
                 Debug.Log("is ndrunk");
             } else

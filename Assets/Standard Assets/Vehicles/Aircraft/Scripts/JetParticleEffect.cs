@@ -26,20 +26,19 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             m_System = GetComponent<ParticleSystem>();
 
             // set the original properties from the particle system
-            m_OriginalLifetime = m_System.main.startLifetime.constant;
-            m_OriginalStartSize = m_System.main.startSize.constant;
-            m_OriginalStartColor = m_System.main.startColor.color;
+            m_OriginalLifetime = m_System.startLifetime;
+            m_OriginalStartSize = m_System.startSize;
+            m_OriginalStartColor = m_System.startColor;
         }
 
 
         // Update is called once per frame
         private void Update()
         {
-			ParticleSystem.MainModule mainModule = m_System.main;
-			// update the particle system based on the jets throttle
-			mainModule.startLifetime = Mathf.Lerp(0.0f, m_OriginalLifetime, m_Jet.Throttle);
-			mainModule.startSize = Mathf.Lerp(m_OriginalStartSize*.3f, m_OriginalStartSize, m_Jet.Throttle);
-			mainModule.startColor = Color.Lerp(minColour, m_OriginalStartColor, m_Jet.Throttle);
+            // update the particle system based on the jets throttle
+            m_System.startLifetime = Mathf.Lerp(0.0f, m_OriginalLifetime, m_Jet.Throttle);
+            m_System.startSize = Mathf.Lerp(m_OriginalStartSize*.3f, m_OriginalStartSize, m_Jet.Throttle);
+            m_System.startColor = Color.Lerp(minColour, m_OriginalStartColor, m_Jet.Throttle);
         }
 
 

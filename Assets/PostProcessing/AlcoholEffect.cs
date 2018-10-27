@@ -16,7 +16,7 @@ public class AlcoholEffect : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        level = GameObject.Find("AlcoholLevel").GetComponent<AlcoholLevel>().level;
+        //level = GameObject.Find("AlcoholLevel").GetComponent<AlcoholLevel>().level;
     }
 	
 	// Update is called once per frame

@@ -12,7 +12,7 @@ public class AlcoholEffect : MonoBehaviour {
 
     private bool isDrunk = false;
 
-    float level;
+    private float level;
 
     // Use this for initialization
     void Start () {
@@ -48,5 +48,7 @@ public class AlcoholEffect : MonoBehaviour {
                 isDrunk = true;
                 Debug.Log("is drunk");
             }
+
+        
     }
 }

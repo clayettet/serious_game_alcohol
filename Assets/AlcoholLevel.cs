@@ -14,6 +14,13 @@ public class AlcoholLevel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (level > 0.5f) //is Drunk
+        {
+            //Camera cam = Camera.main;
+            //if (cam != null)
+           // {
+                transform.position = transform.position + new Vector3(Mathf.Sin(Time.time * level*2) / 100, 0.0f, Mathf.Sin(Time.time * level*2)/2 / 100);
+           //}
+        }
+    }
 }

@@ -5,7 +5,7 @@
 ### Map
 
 ### Pistol / interactions
-![Alt Text](doc/gun.gif)
+![Alt Text](doc/gun.gif | width=100)
 
 ### Alcohol effects
 ![Alt Text](doc/effect.gif)

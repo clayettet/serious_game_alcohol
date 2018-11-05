@@ -8,7 +8,7 @@
 ![Alt Text](doc/gun.gif)
 
 ### Alcohol effects
-![Alt Text](https://media.giphy.com/media/WwpJL0CX1k8k6Y5mIQ/giphy.gif)
+![Alt Text](doc/effect.gif)
 
 ### Targets
-![Alt Text](https://media.giphy.com/media/X7qWbwQ4TfY825wkwl/giphy.gif)
+![Alt Text](doc/target.gif)

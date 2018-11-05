@@ -6,6 +6,7 @@
 
 ### Pistol / interactions
 ![Alt Text](doc/gun.gif =250x250)
+<img src="doc/gun.gif" width="50">
 
 ### Alcohol effects
 ![Alt Text](doc/effect.gif)

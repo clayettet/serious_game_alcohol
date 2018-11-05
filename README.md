@@ -5,7 +5,7 @@
 ### Map
 
 ### Pistol / interactions
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](doc/gun.gif)
 
 ### Alcohol effects
 ![Alt Text](https://media.giphy.com/media/WwpJL0CX1k8k6Y5mIQ/giphy.gif)

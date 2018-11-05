@@ -21,6 +21,11 @@ public class ReduceAlcohol : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         Destroy(col.gameObject);
-        AlcoholLevel.level = AlcoholLevel.level - 0.1f;
+        if (AlcoholLevel.level > 0.1f) { 
+            AlcoholLevel.level = AlcoholLevel.level - 0.1f;
+        } else
+        {
+            AlcoholLevel.level = 0.0f;
+        }
     }
 }

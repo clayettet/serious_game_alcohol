@@ -11,7 +11,7 @@ public class AlcoholLevel : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        level = 0.0f;
+        level = 0.5f;
     }
 
     // Update is called once per frame
@@ -19,8 +19,8 @@ public class AlcoholLevel : MonoBehaviour
     {
         Debug.Log("Level" + level);
         if (level >= 0.5f) //is Drunk
-        {
-            transform.position = transform.position + new Vector3(Mathf.Sin(Time.time * 3) / 50, 0.0f, Mathf.Sin(Time.time * 2) / 50); // drunk movement
+        { 
+            transform.position = transform.position + new Vector3(Mathf.Sin(Time.time)*Mathf.PerlinNoise(Time.time,0.0f)/20, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20); // drunk movement
         }
     }
 }

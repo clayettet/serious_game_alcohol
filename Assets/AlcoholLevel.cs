@@ -11,7 +11,7 @@ public class AlcoholLevel : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        level = 0.5f;
+        level = 0.4f;
     }
 
     // Update is called once per frame

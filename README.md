@@ -1,15 +1,14 @@
 ﻿# Serious game simulating alcohol effects in Unity with augmented reality and sound management
  In collaboration with [@souliera](https://github.com/souliera)
 
-## Steps
+## Steps of development 
 ### Map
 
 ### Pistol / interactions
-![Alt Text](doc/gun.gif =250x250)
 <img src="doc/gun.gif" width="512">
 
 ### Alcohol effects
-![Alt Text](doc/effect.gif)
+<img src="doc/effect.gif" width="512">
 
 ### Targets
-![Alt Text](doc/target.gif)
+<img src="doc/target.gif" width="512">

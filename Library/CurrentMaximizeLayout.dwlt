@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 1603
+  controlID: 85
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1604
+  controlID: 86
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 1605
+  controlID: 87
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,8 +169,8 @@ MonoBehaviour:
     y: 0
     width: 202
     height: 364
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -203,9 +203,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f2200000
-    m_LastClickedID: 8434
-    m_ExpandedIDs: e6fbffff00000000
+    m_SelectedIDs: 9c200000
+    m_LastClickedID: 8348
+    m_ExpandedIDs: e6fbffff000000009c200000f2200000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -321,9 +321,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.1291421, y: 0.7163767, z: -0.13773173, w: -0.671682}
   m_Size:
-    m_Target: 5.2743664
+    m_Target: 16.795252
     speed: 2
-    m_Value: 5.2743664
+    m_Value: 16.795252
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
-  m_ViewIsLockedToObject: 1
+  m_ViewIsLockedToObject: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,8 +378,8 @@ MonoBehaviour:
     y: 364
     width: 1086
     height: 271
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -423,19 +423,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/PostProcessing
   m_ViewMode: 1
   m_StartGridSize: 93
   m_LastFolders:
-  - Assets
+  - Assets/PostProcessing
   m_LastFoldersGridSize: 93
   m_LastProjectPath: C:\Users\Theo\Documents\serious_game_alcohol
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 3a0d0000
-    m_LastClickedID: 3386
+    m_SelectedIDs: 400d0000
+    m_LastClickedID: 3392
     m_ExpandedIDs: 000000003a0d000010110000501100006c16000072190000ae190000461a00009e1a0000061b0000f21b0000e01c0000ea1c0000a8440000aa440000ac44000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a0d000010110000501100006c16000072190000ae190000461a00009e1a0000061b0000f21b0000e01c0000ea1c0000a8440000aa440000ac44000000ca9a3b
+    m_ExpandedIDs: 000000003a0d000010110000501100006c16000072190000ae190000461a00009e1a0000061b0000f21b0000e01c0000ea1c0000a8440000aa440000ac440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -489,9 +489,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f2200000
-    m_LastClickedInstanceID: 8434
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 9c200000
+    m_LastClickedInstanceID: 8348
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 0025000014250000f824000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 52}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 93
   m_DirectoriesAreaWidth: 256
 --- !u!114 &12
@@ -562,8 +562,8 @@ MonoBehaviour:
     y: 0
     width: 280
     height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}

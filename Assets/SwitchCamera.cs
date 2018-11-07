@@ -20,7 +20,7 @@ public class SwitchCamera : MonoBehaviour
     void Update()
     {
         //Press the M Button to switch cameras
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             //Check that the Main Camera is enabled in the Scene, then switch to the other Camera on a key press
             if (m_MainCamera.enabled)

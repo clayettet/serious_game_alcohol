@@ -8737,8 +8737,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc93ac11467a4748bba4133b4b529b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drunkProfile: {fileID: 11400000, guid: ea76cc4c9d6d01d4995b330ad1a5068d, type: 2}
   normalProfile: {fileID: 11400000, guid: 09068796a1992974ba3b0b3b1db91ef3, type: 2}
+  drunkProfile1: {fileID: 11400000, guid: afbef9da66f46e047abaa6e386f3a552, type: 2}
+  drunkProfile2: {fileID: 11400000, guid: df5d82e01bc7ab14c9f490814e6d1a6c, type: 2}
+  drunkProfile3: {fileID: 11400000, guid: f5e447522a354ff40adfef4a0247046e, type: 2}
+  drunkProfile4: {fileID: 11400000, guid: ea76cc4c9d6d01d4995b330ad1a5068d, type: 2}
   AlcoholLevelManager: {fileID: 1618109778}
 --- !u!4 &1437331461 stripped
 Transform:
@@ -9917,7 +9920,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: field of view
-      value: 26.991467
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}

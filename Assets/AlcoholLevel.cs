@@ -14,7 +14,7 @@ public class AlcoholLevel : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        level = 0.4f; //init variables
+        level = 0.0f; //init variables
         changeMoveIn = 0.0f;
     }
 
@@ -45,22 +45,64 @@ public class AlcoholLevel : MonoBehaviour
             }
         }
 
-
-        if (level >= 0.5f) //if player is drunk
+        if (level >= 0.2) //if at least slighlty drunk, modify balance
         {
             if (changeMoveIn <= 0.0f) //if timer counter is equal to 0
             {
                 changeMoveIn = Random.RandomRange(1.0f, 5.0f);  // init it again
                 switchMove = !switchMove;                       // and switch direction
             }
-            if (switchMove) // move player randomly in the direction given by switchMove variable
+            if (level < 0.4f)
             {
-                transform.position = transform.position + new Vector3(Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20); // drunk movement
-                changeMoveIn = changeMoveIn - Time.deltaTime;
-            } else
+                if (switchMove) // move player randomly in the direction given by switchMove variable
+                {
+                    transform.position = transform.position + new Vector3(Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 200, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 200); // drunk movement
+                    changeMoveIn = changeMoveIn - Time.deltaTime;
+                }
+                else
+                {
+                    transform.position = transform.position + new Vector3(-Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 200, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 200); // drunk movement
+                    changeMoveIn = changeMoveIn - Time.deltaTime;
+                }
+            } else if (level < 0.6f)
             {
-                transform.position = transform.position + new Vector3(-Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20); // drunk movement
-                changeMoveIn = changeMoveIn - Time.deltaTime;
+
+                if (switchMove) // move player randomly in the direction given by switchMove variable
+                {
+                    transform.position = transform.position + new Vector3(Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 100, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 100); // drunk movement
+                    changeMoveIn = changeMoveIn - Time.deltaTime;
+                }
+                else
+                {
+                    transform.position = transform.position + new Vector3(-Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 100, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 100); // drunk movement
+                    changeMoveIn = changeMoveIn - Time.deltaTime;
+                }
+            } else if (level < 0.8f)
+            {
+
+                if (switchMove) // move player randomly in the direction given by switchMove variable
+                {
+                    transform.position = transform.position + new Vector3(Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 50, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 50); // drunk movement
+                    changeMoveIn = changeMoveIn - Time.deltaTime;
+                }
+                else
+                {
+                    transform.position = transform.position + new Vector3(-Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 50, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 50); // drunk movement
+                    changeMoveIn = changeMoveIn - Time.deltaTime;
+                }
+            } else if (level <= 1.0f)
+            {
+
+                if (switchMove) // move player randomly in the direction given by switchMove variable
+                {
+                    transform.position = transform.position + new Vector3(Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20); // drunk movement
+                    changeMoveIn = changeMoveIn - Time.deltaTime;
+                }
+                else
+                {
+                    transform.position = transform.position + new Vector3(-Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20, 0.0f, Mathf.Sin(Time.time) * Mathf.PerlinNoise(Time.time, 0.0f) / 20); // drunk movement
+                    changeMoveIn = changeMoveIn - Time.deltaTime;
+                }
             }
         }
         Debug.Log(level);

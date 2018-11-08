@@ -5,13 +5,13 @@ using UnityEngine.PostProcessing;
 
 public class AlcoholEffect : MonoBehaviour {
 
-    public PostProcessingProfile drunkProfile;
     public PostProcessingProfile normalProfile;
-
-    private bool isDrunk = false; //TO DELETE IN FINAL VERSION
+    public PostProcessingProfile drunkProfile1;
+    public PostProcessingProfile drunkProfile2;
+    public PostProcessingProfile drunkProfile3;
+    public PostProcessingProfile drunkProfile4;
 
     public AlcoholLevel AlcoholLevelManager;
-    
 
     // Use this for initialization
     void Start () {
@@ -20,31 +20,26 @@ public class AlcoholEffect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        /// DO NOT DELETE - FINAL FUNCTION WILL BE LIKE THIS
-        if (AlcoholLevel.level < 0.5f)
+        if (AlcoholLevel.level < 0.2f)
+         {
+            GetComponent<PostProcessingBehaviour>().profile = normalProfile;
+         }
+        else if (AlcoholLevel.level <= 0.2f && AlcoholLevel.level < 0.4f)
+        {
+            GetComponent<PostProcessingBehaviour>().profile = drunkProfile1;
+        }
+        else if (AlcoholLevel.level >= 0.4f && AlcoholLevel.level < 0.6f)
+        {
+            GetComponent<PostProcessingBehaviour>().profile = drunkProfile2;
+        }
+        else if (AlcoholLevel.level >= 0.6f && AlcoholLevel.level < 0.8f)
+        {
+            GetComponent<PostProcessingBehaviour>().profile = drunkProfile3;
+        }
+        else if (AlcoholLevel.level >= 0.8f)
           {
-                GetComponent<PostProcessingBehaviour>().profile = normalProfile;
+            GetComponent<PostProcessingBehaviour>().profile = drunkProfile4;
           }
-         else
-          {
-            GetComponent<PostProcessingBehaviour>().profile = drunkProfile;
-          }
-
-        /*
-        // SWITCH TO TEST EFFECT - TO DELETE IN FINAL VERSION
-        if (Input.GetKeyDown(KeyCode.P))
-            if (isDrunk)
-            {
-                GetComponent<PostProcessingBehaviour>().profile = normalProfile;
-                isDrunk = false;
-                Debug.Log("is ndrunk");
-            } else
-            {
-                GetComponent<PostProcessingBehaviour>().profile = drunkProfile;
-                isDrunk = true;
-                Debug.Log("is drunk");
-            }
-            */
 
     }
 }

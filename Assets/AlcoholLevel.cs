@@ -10,7 +10,6 @@ public class AlcoholLevel : MonoBehaviour
 
     private float changeMoveIn; //time counter to switch movment directions while drunk
     private bool switchMove;    //save in which direction the player is moving while drunk
-
     // Use this for initialization
     void Start()
     {
@@ -105,6 +104,6 @@ public class AlcoholLevel : MonoBehaviour
                 }
             }
         }
-        Debug.Log(level);
+        //Debug.Log(level);
     }
 }

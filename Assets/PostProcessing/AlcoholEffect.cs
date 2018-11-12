@@ -5,13 +5,18 @@ using UnityEngine.PostProcessing;
 
 public class AlcoholEffect : MonoBehaviour {
 
+    [Header("Post-process profiles")]
     public PostProcessingProfile normalProfile;
     public PostProcessingProfile drunkProfile1;
     public PostProcessingProfile drunkProfile2;
     public PostProcessingProfile drunkProfile3;
     public PostProcessingProfile drunkProfile4;
 
+    [Header("Alcohol Level Manager")]
     public AlcoholLevel AlcoholLevelManager;
+
+    [Header("Sounds effects")]
+    public AudioLowPassFilter LowFilter;
 
     // Use this for initialization
     void Start () {
@@ -40,6 +45,7 @@ public class AlcoholEffect : MonoBehaviour {
           {
             GetComponent<PostProcessingBehaviour>().profile = drunkProfile4;
           }
+        LowFilter.cutoffFrequency = 5000 - AlcoholLevel.level * 3000;
 
     }
 }

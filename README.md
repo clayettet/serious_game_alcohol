@@ -4,11 +4,11 @@
 ## Steps of development 
 ### Map
 
-### Pistol / interactions
-<img src="doc/gun.gif" width="512">
-
 ### Alcohol effects
 <img src="doc/effect.gif" width="512">
+
+### Pistol
+<img src="doc/gun.gif" width="512">
 
 ### Targets
 <img src="doc/challenge.gif" width="512">

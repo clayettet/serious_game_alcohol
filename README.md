@@ -5,7 +5,7 @@
 
 ### Alcohol effects
 <img src="doc/effect.gif" width="512">
-Alcohol is simulated with a combinaison of post-processing effects such as *Motion blur*, *Distorsion*, *Vigneting*...
+Alcohol is simulated with a combinaison of post-processing effects such as *Motion blur* , *Distorsion* , *Vigneting* ...
 
 Balance loss is also integrated with a random movement generated with a *Perlin noise function*.
 

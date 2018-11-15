@@ -11,6 +11,6 @@
 <img src="doc/effect.gif" width="512">
 
 ### Targets
-<img src="doc/target.gif" width="512">
+<img src="doc/challenge.gif" width="512">
 
 ### And more to come very soon!

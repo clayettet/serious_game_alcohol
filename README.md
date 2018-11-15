@@ -2,10 +2,11 @@
  In collaboration with [@souliera](https://github.com/souliera)
 
 ## Steps of development 
-### Map
 
 ### Alcohol effects
 <img src="doc/effect.gif" width="512">
+Alcohol is simulated with a combinaison of post-processing effects such as *Motion blur*, *Distorsion*, *Vigneting*...
+Balance loss is also integrated with a random movement generated with a *Perlin noise function*.
 
 ### Pistol
 <img src="doc/gun.gif" width="512">

@@ -6,6 +6,8 @@ public class MovingTarget : MonoBehaviour {
 
     public AlcoholLevel AlcoholLevelManager;
     public TextMesh hit;
+
+    public Challenge ChallengeManager;
     
     // Use this for initialization
 	void Start () {
@@ -27,8 +29,8 @@ public class MovingTarget : MonoBehaviour {
     void OnCollisionEnter(Collision col)
     {
         Destroy(col.gameObject);
+        ChallengeManager.AddScore();
         StartCoroutine(DisplayHit());
-
     }
 
     IEnumerator DisplayHit()

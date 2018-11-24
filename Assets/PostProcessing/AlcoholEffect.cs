@@ -53,7 +53,7 @@ public class AlcoholEffect : MonoBehaviour {
             BackgroundSource.pitch = 1 - 0.3f * AlcoholLevel.level;
         }
 
-        Debug.Log("Alcohol level: " + AlcoholLevel.level + "Pitch " + BackgroundSource.pitch);
+        //Debug.Log("Alcohol level: " + AlcoholLevel.level);
         LowFilter.cutoffFrequency = 5000 - AlcoholLevel.level * 3000; //actualise audio low filter 
 
     }

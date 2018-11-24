@@ -14,6 +14,9 @@ public class Challenge : MonoBehaviour {
     [Header("UI")]
     public TextMesh ScoreDisplay;
 
+    [Header("Sounds")]
+    public AudioClip EndSound;
+
 	// Use this for initialization
 	void Start () {
         Score = 0;
@@ -30,10 +33,11 @@ public class Challenge : MonoBehaviour {
                 ScoreDisplay.text = TimeLeft.ToString("F0"); //update score
 
             }
-            else
+            else //on challenge end
             {
-                IsInGame = false;
-                ScoreDisplay.text = Score.ToString(); //update score
+                IsInGame = false; //stop game
+                PlaySound(EndSound); //audio feedback
+                ScoreDisplay.text = Score.ToString(); //display score
             }
         }
 	}
@@ -52,5 +56,14 @@ public class Challenge : MonoBehaviour {
         {
             Score++;
         }
+    }
+
+    public static void PlaySound(AudioClip clip)
+    {
+        GameObject Go = new GameObject();
+        AudioSource audioSource = Go.AddComponent<AudioSource>();
+        audioSource.clip = clip;
+        audioSource.Play();
+        GameObject.Destroy(Go, audioSource.clip.length + 0.1f);
     }
 }

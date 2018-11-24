@@ -11907,14 +11907,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911169257}
-  m_LocalRotation: {x: -0, y: -0.32085255, z: -0, w: 0.9471292}
-  m_LocalPosition: {x: -25.31, y: -0.46, z: 11.7}
-  m_LocalScale: {x: 1, y: 2, z: 5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -29.16403, y: 6.16, z: 24.68}
+  m_LocalScale: {x: 0.1, y: 2, z: 5}
   m_Children:
   - {fileID: 89778983}
   m_Father: {fileID: 870726348}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: -37.429, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1911169259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11929,6 +11929,7 @@ MonoBehaviour:
   ChallengeTime: 30
   Score: 0
   ScoreDisplay: {fileID: 89778984}
+  EndSound: {fileID: 8300000, guid: 40288f60d06243440a51a1f36ffa5b6c, type: 3}
 --- !u!65 &1911169260
 BoxCollider:
   m_ObjectHideFlags: 0

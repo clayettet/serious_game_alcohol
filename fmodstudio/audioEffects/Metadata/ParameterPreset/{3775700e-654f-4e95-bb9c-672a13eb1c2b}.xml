@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{3775700e-654f-4e95-bb9c-672a13eb1c2b}">
+        <property name="name">
+            <value>AlcoholLevel</value>
+        </property>
+        <relationship name="folder">
+            <destination>{32798752-2514-48c2-bd02-1f10b2815119}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{e4acfc30-2217-4d87-983f-77f26b3cdfcb}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{e4acfc30-2217-4d87-983f-77f26b3cdfcb}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

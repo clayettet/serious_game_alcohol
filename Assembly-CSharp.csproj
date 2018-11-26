@@ -68,6 +68,8 @@
     <Compile Include="Assets\Flare Gun\Scripts\flaregun.cs" />
     <Compile Include="Assets\Flare Gun\Scripts\flareround.cs" />
     <Compile Include="Assets\Flare Gun\Scripts\swayc.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudio.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudioRoom.cs" />
     <Compile Include="Assets\MovingTarget.cs" />
     <Compile Include="Assets\PostProcessing\AlcoholEffect.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
@@ -116,6 +118,8 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\ReduceAlcohol.cs" />
+    <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudio.cs" />
+    <Compile Include="Assets\ResonanceAudio\Scripts\FmodResonanceAudioRoom.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -124,7 +128,6 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\soundplayer.cs" />
     <Compile Include="Assets\SwitchCamera.cs" />
     <Compile Include="Assets\TriggerReverb.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />

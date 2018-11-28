@@ -15,5 +15,16 @@
         <property name="initialValue">
             <value>0</value>
         </property>
+        <property name="seekSpeedDescending">
+            <value>4.8000001907348633</value>
+        </property>
+        <relationship name="modulators">
+            <destination>{4108d3c8-7a02-4cd8-b348-a036a62b8f7f}</destination>
+        </relationship>
+    </object>
+    <object class="RandomizerModulator" id="{4108d3c8-7a02-4cd8-b348-a036a62b8f7f}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>cursorPosition</value>
+        </property>
     </object>
 </objects>

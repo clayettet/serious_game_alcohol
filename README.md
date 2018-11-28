@@ -1,4 +1,4 @@
-﻿# Serious game simulating alcohol effects in Unity with augmented reality and sound management
+﻿# Serious game simulating alcohol effects in Unity with augmented reality and dynamic sounds
  In collaboration with [@souliera](https://github.com/souliera)
 
 ## Steps of development 

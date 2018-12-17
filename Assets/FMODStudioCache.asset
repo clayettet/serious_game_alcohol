@@ -13,13 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114513014032686544}
-  - {fileID: 114727369785943268}
+  - {fileID: 114291595975982412}
   EditorEvents:
   - {fileID: 114193952333075044}
   - {fileID: 114304141859245284}
-  MasterBankRef: {fileID: 114727369785943268}
+  MasterBankRef: {fileID: 114291595975982412}
   StringsBankRef: {fileID: 114513014032686544}
-  stringsBankWriteTime: 636788510269832096
+  stringsBankWriteTime: 636798878365232119
   cacheVersion: 2
 --- !u!114 &114046414770257472
 MonoBehaviour:
@@ -53,7 +53,7 @@ MonoBehaviour:
   Path: event:/steps
   guid: 3e69051be1ddb140925bd86b04e28bcc
   Banks:
-  - {fileID: 114727369785943268}
+  - {fileID: 114291595975982412}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -76,6 +76,25 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114291595975982412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: E:\Users\Utilisateur\Unity\Alcool\fmodstudio\audioEffects\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636798878365202126
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2554688
+  Exists: 1
 --- !u!114 &114297572432526878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,12 +124,12 @@ MonoBehaviour:
   Path: event:/backgroundMusic
   guid: ecb9d8a6f1f6cd459abeb129f4c8f56a
   Banks:
-  - {fileID: 114727369785943268}
+  - {fileID: 114291595975982412}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114249111291347004}
+  - {fileID: 114659326288060074}
   MinDistance: 0
   MaxDistance: 0
   Length: 183000
@@ -163,12 +182,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: fmodstudio\audioEffects\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636788510269832096
+  lastModified: 636798878365232119
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 774
   Exists: 1
+--- !u!114 &114659326288060074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AlcoholLevel
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114659452901560552
 MonoBehaviour:
   m_ObjectHideFlags: 0

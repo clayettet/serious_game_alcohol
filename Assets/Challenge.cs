@@ -40,6 +40,11 @@ public class Challenge : MonoBehaviour {
                 ScoreDisplay.text = Score.ToString(); //display score
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 	}
 
     void OnCollisionEnter(Collision col)

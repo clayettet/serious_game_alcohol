@@ -17,10 +17,26 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 114193952333075044}
   - {fileID: 114304141859245284}
+  - {fileID: 114208745140290512}
   MasterBankRef: {fileID: 114291595975982412}
   StringsBankRef: {fileID: 114513014032686544}
-  stringsBankWriteTime: 636798878365232119
+  stringsBankWriteTime: 636818690928190747
   cacheVersion: 2
+--- !u!114 &114044091903424502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Sand
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114046414770257472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,12 +71,40 @@ MonoBehaviour:
   Banks:
   - {fileID: 114291595975982412}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114305309814820304}
+  MinDistance: 1
+  MaxDistance: 20
   Length: 5000
+--- !u!114 &114208745140290512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/bruitsdepas
+  guid: 4e2eddb3a8661941a1fab9c8e6a7f33a
+  Banks:
+  - {fileID: 114291595975982412}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114567351374153748}
+  - {fileID: 114336938393336288}
+  - {fileID: 114488405524413406}
+  - {fileID: 114775983461573776}
+  - {fileID: 114044091903424502}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 336
 --- !u!114 &114249111291347004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,11 +133,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: E:\Users\Utilisateur\Unity\Alcool\fmodstudio\audioEffects\Build\Desktop\Master
     Bank.bank
-  lastModified: 636798878365202126
+  lastModified: 636818690928110916
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2554688
+    Value: 2590208
   Exists: 1
 --- !u!114 &114297572432526878
 MonoBehaviour:
@@ -129,10 +173,40 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114659326288060074}
+  - {fileID: 114453719277639906}
   MinDistance: 0
   MaxDistance: 0
   Length: 183000
+--- !u!114 &114305309814820304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: position
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114336938393336288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Ice
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114350595094610690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,6 +229,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5000
+--- !u!114 &114453719277639906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AlcoholLevel
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114455474321245900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +259,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114488405524413406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Dirt
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114513014032686544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,12 +286,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: fmodstudio\audioEffects\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636798878365232119
+  lastModified: 636818690928190747
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 774
+    Value: 826
   Exists: 1
+--- !u!114 &114567351374153748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Water
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114659326288060074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,3 +360,18 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2554912
   Exists: 1
+--- !u!114 &114775983461573776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Wood
+  Min: 0
+  Max: 1
+  Default: 0

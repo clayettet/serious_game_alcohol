@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{bd35ae48-a322-4f57-a2bb-23806396f867}">
+        <property name="assetPath">
+            <value>goutte1.m.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.33600000000000002</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{af5ca983-afa3-4f4f-be23-cfef11bb77c9}</destination>
+        </relationship>
+    </object>
+</objects>

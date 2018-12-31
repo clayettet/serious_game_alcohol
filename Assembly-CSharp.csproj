@@ -60,6 +60,7 @@
      <Compile Include="Assets\Flare Gun\Scripts\flaregun.cs" />
      <Compile Include="Assets\Flare Gun\Scripts\flareround.cs" />
      <Compile Include="Assets\Flare Gun\Scripts\swayc.cs" />
+     <Compile Include="Assets\Footsteps.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudio.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudioRoom.cs" />
      <Compile Include="Assets\MovingTarget.cs" />

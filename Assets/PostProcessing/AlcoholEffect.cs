@@ -19,9 +19,16 @@ public class AlcoholEffect : MonoBehaviour {
     public AudioSource BackgroundSource;
     public AudioLowPassFilter LowFilter;
 
+    [FMODUnity.EventRef]
+    public string MusicLevel = "event:/backgroundmMusic";
+    public FMOD.Studio.EventInstance BackgroundEvent;
+    public FMOD.Studio.ParameterInstance AlcoholLevelMusic;
+
     // Use this for initialization
     void Start () {
-        
+        BackgroundEvent = FMODUnity.RuntimeManager.CreateInstance(MusicLevel);
+        BackgroundEvent.getParameter("AlcoholLevelMusic", out AlcoholLevelMusic);
+        BackgroundEvent.start();
     }
 	
 	// Update is called once per frame
@@ -55,6 +62,6 @@ public class AlcoholEffect : MonoBehaviour {
 
         //Debug.Log("Alcohol level: " + AlcoholLevel.level);
         LowFilter.cutoffFrequency = 5000 - AlcoholLevel.level * 3000; //actualise audio low filter 
-
+        AlcoholLevelMusic.setValue(AlcoholLevel.level);
     }
 }

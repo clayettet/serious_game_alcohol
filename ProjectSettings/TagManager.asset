@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - Dirt
   - Wood
+  - Water
   layers:
   - Default
   - TransparentFX
